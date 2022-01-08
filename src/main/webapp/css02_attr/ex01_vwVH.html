@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** 반응형을 위한 CSS 단위 **</title>
+<style>
+	#container {
+		width:50vw; height:50vh;
+	}
+	#test4{
+		background-color:red;
+		width:200px; height:150px;
+	}
+	#test2{
+		background-color:green;
+		width:100%; height:100%;
+	}
+	
+</style>
+</head>
+<body>
+<h3>** 반응형을 위한 CSS 단위 **</h3>
+<pre>
+=> %, em, rem, vw, vh
+=> em : 상위 tag에 적용된 사이즈가 기준이 됨
+=> rem : root + em (emphemeral_임시적인_고어_사전에 잘 안나옴 unit)
+		가장 상위인 html Tag에 적용된 사이즈가 기준이 됨
+=> vw : viewPoint width
+		view 의 width 에 근거하여 1vw 는 width의 1% 와 동일
+		(부모가 아닌 현재 보여지는 view 의 폭)
+=> vh : viewPoint height
+		view 의 height 에 근거하여 1vh 는 height의 1% 와 동일
+		(부모가 아닌 현재 보여지는 view 의 높이)
+</pre>
+<hr>
+<div id="containter">
+	<div id="test1" class="test"></div>
+	<div id="test2" class="test"></div>
+</div>
+</body>
+</html>

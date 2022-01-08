@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Form & Table Test join **</title>
+</head>
+<body>
+<h2 align="center">*** Form & Table Test Join : 회원가입 작성 ***</h2>
+<h1 align="center">회원가입</h1>
+<form><table border="2" cellspacing="0" width="100%" bgcolor="lavender">
+	<tr><th colspan="2" bgcolor="lightcyan">모든 항목을 입력해야 합니다.</th></tr>
+	<tr><th border="1" width="80" bgcolor="aliceblue">이름 :
+		</th>
+		<td border="1"><input type="text" name="name" id="name" size="30" value="이름입력">
+		</td>
+	</tr>
+	<tr><th border="1" width="80" bgcolor="aliceblue">비밀번호 :
+		</th>
+		<td border="1"><input type="password" name="password" id="password" size="30">* 영문 4 ~8 자리 미만 입력 *
+		</td>
+	</tr>
+	<tr><th border="1" width="80" bgcolor="aliceblue">성별 :
+		</th>
+		<td border="1"><input type="radio" name="gender" id="m" value="남" checked><label for="m">남성</label>
+			<input type="radio" name="gender" id="f" value="여"><label for="f">여성</label>
+		</td>
+	</tr>
+	<tr><th border="1" width="80" bgcolor="aliceblue">취미 :
+		</th>
+		<td border="1"><input type="checkbox" name="hobby" id="cn" value="1"><label for="cn">영화</label>
+			<input type="checkbox" name="hobby" id="cm" value="2"><label for="cm">등산</label>
+			<input type="checkbox" name="hobby" id="ms" value="3"><label for="ms">음악</label>
+			<input type="checkbox" name="hobby" id="wo" value="4"><label for="wo">운동</label>
+		</td>
+	</tr>
+	<tr><th border="1" width="80" bgcolor="aliceblue">직업 :
+		</th>
+		<td border="1"><select multiple size="2"><option value="1">Java개발자
+			<option value="2">html개발자
+			<option value="3">CSS개발자
+			<option value="4">JavaScript개발자
+		</select>&nbsp;원하는 직업을 선택하세요. (복수선택 가능)
+		</td>
+	</tr>
+	<tr><th border="1" width="80" bgcolor="aliceblue">자기소개 :
+		</th>
+		<td align="center" border="1"><textarea name="selfIndroduce" rows="8" style="width:98%;background:transparent;">
+		</textarea>
+		</td>
+	</tr>
+	<tr><td colspan="2" align="right" bgcolor="lightcyan">
+		<input type="submit" value="전송">
+		<input type="button" value="버튼">
+		<input type="reset" value="취소">
+		</td>
+	</tr>
+</table></form>
+
+</body>
+</html>

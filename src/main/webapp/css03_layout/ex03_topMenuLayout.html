@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** TopMenu Layout  **</title>
+<style>
+	*:not(hr) { margin:0; border:0; padding:0; }
+	body { margin:0 auto; width:900px; }
+	header { width:100%; height:160px; background-color:gray; }
+	nav { height:70px; background-color:yellow;}
+	nav div { float:left; padding:3px 70px; }
+	/*
+	nav div { position:absolute; top:160px; padding:3px; }
+	#d1 { left:320px; }
+	#d2 { left:530px; }
+	#d3 { left:750px; }
+	#d4 { left:920px; }
+	*/
+	ul { list-style:none; }
+	.title{ color:black;}
+	ul a { 
+		font-size:20px; font-weight:bold; color:gray;
+		text-decoration:underline; line-height:30px;
+	}
+	ul ul { display:none; clear:both; }
+	ul li:hover ul { display:block; background-color:yellow;}
+	ul li a:hover { color:green; }
+	section { width:100%; height:500px; background-color:aqua;}
+	footer { width:100%; height:150px; background-color:pink; }
+	iframe { width:100%; height:100%; }
+</style>
+</head>
+<body>
+	<header><iframe src="header.html"></iframe></header>
+	<!-- <nav><iframe src="topMenu.html"></iframe></nav>  -->
+	<nav><ul>
+	<div id="d1">
+		<li><a class="title" href="">GoodSite</a>
+			<ul>
+				<li><a href="https://www.w3schools.com/colors/colors_groups.asp" target="_blank">ColorPicker</a>
+				<li><a href="https://oracle.com" target="_blank">Oracle</a>
+				<li><a href="http://docs.oracle.com/javase/8/docs/api" target="main">JavaAPI</a>
+				<li><a href="http://www.eclipse.org"  target="_blank">Eclipse</a>
+				<li><a href="http://tomcat.apache.org"  target="_blank">Tomcat</a>
+			</ul>
+		</div>
+		<div id="d2">
+		<li><a class="title" href="">HTML</a>
+			<ul>
+				<li><a href="../html01/ex01_start.html" target="main">Start</a>
+				<li><a href="../html01/ex02_specialCharacter.html" target="main">Special</a>
+				<li><a href="../html01/ex03_imageLink.html" target="main">Image</a>
+			</ul>
+		</div>
+		<div id="d3">
+			<li><a class="title" href="">CSS</a>
+			<ul>
+				<li><a href="../css01/ex01_startCss.html" target="main">Start</a>
+				<li><a href="../css01/ex03_03struChild.html" target="main">StrucChild</a>
+				<li><a href="../css01/ex03_04state.html" target="main">State</a>
+			</ul>
+		</div>
+		<div id="d4">
+			<li><a class="title" href="./main.html" target="main">[HOME]</a>
+		</div>
+	</ul></nav>
+	<section><iframe src="main.html" name="main"></iframe></section>
+	<footer><iframe src="footer.html"></iframe></footer>
+</body>
+</html>
